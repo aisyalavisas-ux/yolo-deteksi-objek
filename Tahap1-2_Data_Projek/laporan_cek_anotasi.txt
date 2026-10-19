@@ -1,0 +1,47 @@
+Gambar          : 220
+Tanpa file label: 0
+Label kosong    : 20 (gambar latar tanpa objek)
+Jumlah kotak per kelas:
+  person    : 808
+  car       : 173
+  bottle    : 43
+
+103 masalah ditemukan:
+  [!] 000000026204.txt baris 8: kotak sangat kecil (4x13 px)
+  [!] 000000067213.txt baris 11: kotak sangat kecil (15x6 px)
+  [!] 000000076416.txt baris 4: kotak sangat kecil (7x15 px)
+  [!] 000000087038.txt baris 12: kotak sangat kecil (7x35 px)
+  [!] 000000093154.txt baris 9: kotak sangat kecil (8x6 px)
+  [!] 000000093717.txt baris 12: kotak sangat kecil (8x15 px)
+  [!] 000000107851.txt baris 2: kotak sangat kecil (8x13 px)
+  [!] 000000107851.txt baris 5: kotak sangat kecil (7x18 px)
+  [!] 000000147725.txt baris 7: kotak sangat kecil (7x34 px)
+  [!] 000000148999.txt baris 6: kotak sangat kecil (8x12 px)
+  [!] 000000148999.txt baris 7: kotak sangat kecil (7x7 px)
+  [!] 000000148999.txt baris 9: kotak sangat kecil (7x7 px)
+  [!] 000000148999.txt baris 10: kotak sangat kecil (7x8 px)
+  [!] 000000148999.txt baris 12: kotak sangat kecil (5x8 px)
+  [!] 000000166918.txt baris 15: kotak sangat kecil (4x17 px)
+  [!] 000000166918.txt baris 17: kotak sangat kecil (6x19 px)
+  [!] 000000187144.txt baris 9: kotak sangat kecil (8x19 px)
+  [!] 000000198928.txt baris 1: kotak sangat kecil (14x3 px)
+  [!] 000000198928.txt baris 3: kotak sangat kecil (25x7 px)
+  [!] 000000199395.txt baris 3: kotak sangat kecil (6x12 px)
+
+Gambar dengan kotak tersimpan di ../../dataset_yolo/cek_visual/ untuk dicek visual.
+
+----------------------------------------------------------------------
+CATATAN TAMBAHAN (analisis atas keluaran skrip di atas)
+----------------------------------------------------------------------
+- Skrip hanya menampilkan 20 dari 103 peringatan. Seluruh 103 peringatan
+  berjenis sama: kotak dengan salah satu sisi < 8 px (bukan kesalahan format).
+  Per kelas : person 77, car 24, bottle 2.
+  Per split : train 71, val 21, test 11.
+  103 dari 1.024 kotak = 10,1%. Ini objek kecil/jauh bawaan COCO.
+- Tidak ditemukan: file label hilang, baris bukan 5 angka, class_id di luar
+  classes.txt, nilai di luar rentang 0-1, kotak keluar batas gambar.
+- Tidak ada gambar duplikat (hash MD5) di dalam maupun antar split.
+- Uji konversi YOLO -> COCO (02) -> YOLO (03): 220 file label identik dengan
+  aslinya (selisih maksimum 0,000001; classes.txt sama).
+- Pemeriksaan visual: lihat contoh_cek_visual.jpg (12 gambar sampel termasuk
+  2 gambar latar). Kotak berada tepat pada objek.

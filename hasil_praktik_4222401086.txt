@@ -1,0 +1,17 @@
+==============================================================================
+  PRAKTIK TERPADU MINGGU 4-7 - RET503
+==============================================================================
+  NIM / Nama    : 4222401086 / Ais Ya Lavisa Sahra
+  Waktu         : 19-10-2026 10:36:34
+  Komputer/user : 27631c81cf8f / root
+  Dataset       : dataset_v1  (sidik jari label: 0901297D1BF3)
+  Pengaturan    : model yolo26n, epochs 30, imgsz 416, batch 16
+==============================================================================
+  Eksperimen     Perubahan        mAP50  mAP50-95      P      R     ms   menit
+  E1_pretrained  -                0.630     0.426  0.637  0.600    9.0     1.7
+  E2_scratch     -                0.004     0.001  0.346  0.030    4.1     1.4
+  E3_tuning      imgsz=640        0.642     0.499  0.751  0.609    8.6     1.8
+==============================================================================
+  Model terpilih (mAP50-95 val tertinggi): E3_tuning
+  Hasil di data TEST (sekali saja)       : mAP50 0.390 | mAP50-95 0.265
+==============================================================================
